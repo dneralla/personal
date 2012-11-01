@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Thu Nov 01 01:33:02 CDT 2012
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=DeepakNeralla-Resume.tex
+outputFile=DeepakNeralla-Resume.pdf
+langSpell=en
+markDer=true
+srcDir=

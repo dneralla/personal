@@ -1,0 +1,155 @@
+\documentclass[letterpaper,10pt]{article}
+
+% Page layout, define margins
+\usepackage[top=0.7in, bottom=0.7in, left=0.7in, right=0.7in]{geometry}
+\usepackage{color}
+\usepackage{avant}
+
+%Basic title information - not really necessary
+\title{Deepak Neralla - Resume}
+\author{Deepak Neralla}
+\date{2012-01-11}
+
+\begin{document}
+
+%Definitions for everything
+%create command for sections to override the default one
+\renewcommand{\section}[1]{
+	\noindent{\raisebox{-5pt}{\bfseries {#1}}}
+}
+
+%create command to right-align all dates
+\renewcommand{\date}[1]{
+	\hfill {#1}\ignorespacesafterend
+}
+
+\newcommand{\personal}[1]{
+	{#1}
+}
+
+%create new list environment to control the spacing
+\newenvironment{reslist}
+{ \begin{itemize}
+	\setlength{\topsep}{0pt}
+	\setlength{\itemsep}{0pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\partopsep}{0pt}}
+{\end{itemize}}
+
+%and another one for lists with no bullets
+\newenvironment{resdescription}
+{\begin{description}
+	\setlength{\itemindent}{-20pt}
+	\setlength{\labelsep}{20pt}
+	\setlength{\topsep}{0pt}
+	\setlength{\itemsep}{0pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+	\setlength{\partopsep}{0pt}}
+{\end{description}}
+
+%turn off page numbering
+\pagestyle{empty}
+
+%tell LaTeX that hyphenation is Baaaad
+\hyphenpenalty=5000
+
+%Heading
+\begin{center}
+{\Large \bf Deepak Neralla}\\
+\personal{{neralla2@illinois.edu}} 
+
+%Address
+\personal{{815.546.2427}}
+\end{center}
+
+%horizontal separating line
+\noindent\hrulefill
+
+
+
+\section{Education}
+
+\begin{resdescription}
+	\item[] { University Of Illinois at Urbana Champaign}
+	\begin{resdescription}
+		\item[] { Masters in Computer Science   \date{May 2014}
+		}
+	 \end{resdescription}
+		\item[] {Indian Institute of Information Technology, Allahabad}
+	 \begin{resdescription}
+		\item[] { Bachelors in Information Technology  \date{May 2010}
+			
+		}
+	 \end{resdescription}
+\end{resdescription}
+\section{Work Experience}
+\begin{reslist}
+	\item { University of Archives - Web developer     \date{Present }}
+	\begin{reslist}
+		\item {Working on development of archival management tools Archive space and myKive  in Ruby on Rails}
+	\end{reslist}
+
+	\item { Oracle India -Software Development Engineer \date{July 2010 to July 2012}}
+	\begin{reslist}
+		\item {Designed and implemented SOAP webservice endpoints for Profitability and Cost management}
+		\item {Developed a System automated task console for Financial close Management product to trigger webservice end points per the scheduled period }
+	\end{reslist}
+\end{reslist}
+\section{Technical Expertise}
+\begin{resdescription}
+	\item[] { {\em Languages and Skills:}  C,Java,RubyonRails,JavaScript,Jquery,node,backbone.js,SQL ,Objective-C,\LaTeX}
+	\item[]{ {\em Scientific tools:} Matlab,Mathematica}
+\end{resdescription}
+
+
+\section{Projects}
+
+\begin{reslist}
+	
+	
+	\item {Distributed online learning algorithms for semantic role labelling \date{Inprogress}}
+	\begin{reslist}
+		\item {Implementing perceptron and its variants using map reduce and applying them on the semantic role labelling corpus }
+     \end{reslist}
+     
+     \item{Conversation Clocks  \date {Inprogress}}
+     \begin{reslist}
+        \item {Iphone application that shows the participation of an individual in a conference in the form of real-time visualization}
+     \end{reslist}
+	\item {Peer to peer SIP}
+	\begin{reslist}
+	  \item {A peer to peer based session intiation protocol using kademlia based Distributed hash table}
+    \end{reslist}
+	
+	\item { Simple Distributed file system}
+   \begin{reslist}
+		\item {A Distributed file system with basic functionalities of storing and querying the file including file replication and load balancing }
+   \end{reslist}
+    
+    \item {Optical Character Recognition }
+	\begin{reslist}
+		\item {Artificial neural network based hand written character recognition using matlab}
+    \end{reslist}
+\end{reslist}
+\section{Other cool Stuff}
+ \begin{reslist}
+ \item {Ipv4 to Ipv6 transalation using tunneling}
+ \item {Support vector machine based email spam filter}
+ \item {Shoot the Star caste - opengl game}
+ \item {A parallel priority queue extension for Intel TBB}
+ \end{reslist}
+\section{Certifications}
+ \begin{reslist}
+  \item {Juniper networks certified Routing associate(JNCIA-ER)}
+  \item {Juniper networks certified Switching associate(JNCIA-EX)}
+ \end{reslist}
+\section{Awards and Achievements}
+\begin{reslist}
+	\item {Winner of VmWare Fabric Hackathon 2012 in UIUC}
+	\item {Unrecognized coder of the month in Oracle for the month of April 2011}
+	\item {Won 3rd Prize in Ethical Hacking contest organized by IIIT Hyderabad during their Tech Fest '09.}
+	\item {Received Prathiba Scholarship, given to meritorious students by the government of Andhra Pradesh, India for all four years of under graduate studies}
+\end{reslist}
+\end{document}
